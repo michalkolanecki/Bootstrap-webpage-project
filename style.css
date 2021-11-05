@@ -1,9 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body {
     position: relative;
+    font-family: 'Lato', sans-serif;
 }
+
+/* NAVIGATION */
+
 .navbar {
-    background-color: #F1DAC4;
+    background-color: #F8F4E3;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
-.navbar-brand {
-    
+.navbar-toggler {
+    margin: 20px;
+}
+.navbar-brand img {
+    width: 75px;
+    height: 75px;
+}
+.navbar-nav li {
+    font-size: 20px;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+.navbar-nav .nav-link {
+    color: #E5446D;
+    border-radius: 5px;
+}
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link:hover {
+    color: #FFF;
+    background-color: #E5446D;
+}
+
+/* HERO SECTION */
+
+.landing {
+    background-image: url(./img/rocknwool-zOf_j3XJTB4-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.8;
+}
+.landing-text {
+    color: #E5446D;
+    width: 100%;
+    max-width: 100;
+    text-transform: uppercase;
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+}
+.landing-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow: 0px 1px 7px #F8F4E3;
+    padding-bottom: 60px;
+}
+.landing-text h3 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow: 0px 1px 5px #f8f4e3;
 }
