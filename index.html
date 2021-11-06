@@ -9,13 +9,14 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
         crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>Bootstrap-webpage-project</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarResponsive">
     <header>
         <div id="home">
-            <nav class="navbar navbar-expand-md fixed-top">
+            <nav class="navbar navbar-expand-lg fixed-top">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,7 +26,7 @@
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#crafts">Accessories</a>
+                            <a class="nav-link" href="#accessories">Accessories</a>
                         </li>
                         <li class="nav-item d-none d-sm-none d-md-block">
                             <a class="navbar-brand m-0 p-0" href="#home"><img src="img/logo.png" alt="Logo image"></a>
@@ -41,45 +42,83 @@
             </nav>
         </div>
     </header>
-    <div class="container-fluid m-0 p-0">
+    <main>
         <div class="landing"></div>
         <div class="landing-text text-center">
             <h1>Welcome to For Home</h1>
-            <h3>Everything is made with passion</h3>
+            <p>Everything is made with passion</p>
         </div>
-        <div class="container-fluid text-center m-0 p-0" id="crafts" class="offset">
-            <h1>Home accessories</h1>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <figure class="figure">
-                        <img src="/img/hanna-balan-YasQvzPbGOQ-unsplash.jpg" class="figure-img img-fluid rounded" alt="Pictures which show candles">
-                        <figcaption class="figure-caption text-center">Section candles</figcaption>
-                    </figure>
+        <div class="container-fluid text-center m-0 p-0" id="accessories" class="offset">
+            <div class="accessories">
+                <h1>Home accessories</h1>
+                <div class="row text-center">
+                    <div class="col-lg-4">
+                        <figure class="figure">
+                            <img src="/img/hanna-balan-YasQvzPbGOQ-unsplash.jpg" class="figure-img" alt="Pictures which show candles">
+                            <figcaption class="figure-caption text-center">Section candles</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4">
+                        <figure class="figure">
+                            <img src="/img/hutomo-abrianto-Q_fZcn8vlWY-unsplash.jpg" class="figure-img" alt="Pictures which show pillows">
+                            <figcaption class="figure-caption text-center">Section pillows</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4">
+                        <figure class="figure">
+                            <img src="/img/rocknwool-zOf_j3XJTB4-unsplash.jpg" class="figure-img" alt="Pictures which show others">
+                            <figcaption class="figure-caption text-center">Section others</figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <figure class="figure">
-                        <img src="/img/hutomo-abrianto-Q_fZcn8vlWY-unsplash.jpg" class="figure-img img-fluid rounded" alt="Pictures which show pillows">
-                        <figcaption class="figure-caption text-center">Section pillowss</figcaption>
-                    </figure>
+                <a class="btn btn-lg btn-accessories" href="#" role="button">Check</a>
+            </div>
+        </div>
+        <div class="container text-center about-me" id="aboutMe" class="offset">
+            <div class="row align-items-center text-center">
+                <div class="col-lg-6">
+                    <img src="/img/oriento-6HYqdm0CniQ-unsplash.jpg" class="img-thumbnail rounded" alt="Image present me">
                 </div>
-                <div class="col-md-4">
-                    <figure class="figure">
-                        <img src="/img/rocknwool-zOf_j3XJTB4-unsplash.jpg" class="figure-img img-fluid rounded" alt="Pictures which show others">
-                        <figcaption class="figure-caption text-center">Section others</figcaption>
-                    </figure>
+                <div class="col-lg-6 info">
+                    <h1>About me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis velit dictum velit iaculis, 
+                        in ornare odio vehicula. In ac consequat nisi. Aenean ornare nisi ut sapien sollicitudin porta. 
+                        Etiam sollicitudin ex dolor, pulvinar rutrum sem scelerisque sit amet. Quisque mattis egestas ligula, 
+                        cursus congue justo finibus id. Maecenas eu lacus nisi. Fusce in dictum tortor.
+                    </p>
+                    <a class="btn btn-lg btn-about" href="#" role="button">Check</a>
                 </div>
             </div>
-            <a class="btn btn-primary" href="#" role="button" target="_blank">Check</a> <!--Link to her facebook or instagram-->
-
         </div>
-        <div id="aboutMe" class="offset">
-            <!-- About section section -->
-        </div>
+    </main>
+    <footer>
         <div id="contact" class="offset">
-            <!-- Contact section -->
+            <div class="col-md-12 text-center contact-title">
+                    <h1>Get in touch with us!</h1>
+            </div>
+            <div class="row text-center contact-media">
+                <div class="col-md-3 mb-3">
+                    <i class="bi bi-facebook fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    <p>Facebook</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <i class="bi bi-instagram fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    <p>Instagram</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <i class="bi bi-envelope fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    <p>Email</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <i class="bi bi-telephone fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    <p>Phone</p>
+                </div>
+            </div>
+            <div class="col-md-12 text-center contact-rights">
+                <p>Copyright@MichalKolanecki2021</p>
+            </div>
         </div>
-    </div>
-
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
         crossorigin="anonymous">
