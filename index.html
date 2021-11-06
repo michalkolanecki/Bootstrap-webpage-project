@@ -14,33 +14,31 @@
     <title>Bootstrap-webpage-project</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarResponsive">
-    <header>
-        <div id="home">
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#accessories">Accessories</a>
-                        </li>
-                        <li class="nav-item d-none d-sm-none d-md-block">
-                            <a class="navbar-brand m-0 p-0" href="#home"><img src="img/logo.png" alt="Logo image"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutMe">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+    <header id="home">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accessories">Accessories</a>
+                    </li>
+                    <li class="nav-item d-none d-sm-none d-md-none d-lg-block">
+                        <a class="navbar-brand m-0 p-0" href="#home"><img src="img/logo.png" alt="Logo image"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMe">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="landing"></div>
@@ -96,21 +94,29 @@
             <div class="col-md-12 text-center contact-title">
                     <h1>Get in touch with us!</h1>
             </div>
-            <div class="row text-center contact-media">
+            <div class="row m-0 text-center contact-media">
                 <div class="col-md-3 mb-3">
-                    <i class="bi bi-facebook fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    <a href="#">
+                        <i class="bi bi-facebook fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    </a>
                     <p>Facebook</p>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <i class="bi bi-instagram fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    <a href="#">
+                        <i class="bi bi-instagram fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    </a>
                     <p>Instagram</p>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <i class="bi bi-envelope fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    <a href="#">
+                        <i class="bi bi-envelope fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    </a>
                     <p>Email</p>
                 </div>
                 <div class="col-md-3 mb-3">
-                    <i class="bi bi-telephone fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    <a href="#">
+                        <i class="bi bi-telephone fa-4x" data-fa-transform="shrink-3 up-5"></i>
+                    </a>
                     <p>Phone</p>
                 </div>
             </div>

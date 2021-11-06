@@ -15,8 +15,9 @@ body {
     font-weight: 700;
     letter-spacing: 3px;
 }
-.navbar-toggler {
+.navbar-light .navbar-toggler {
     margin: 20px;
+    border-color: #E5446D;
 }
 .navbar-brand img {
     width: 75px;
@@ -26,15 +27,19 @@ body {
     font-size: 20px;
     margin: 0 30px;
     text-transform: uppercase;
-}
-.navbar-nav .nav-link {
     color: #E5446D;
-    border-radius: 5px;
 }
-.navbar-nav .nav-link:active,
-.navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link {
+    border-radius: 5px;
+    color: #E5446D;
+}
+.navbar-light .navbar-nav .nav-link:active,
+.navbar-light .navbar-nav .nav-link:hover {
     color: #FFF;
     background-color: #E5446D;
+}
+.bi-list {
+    color: #E5446D;
 }
 
 /* HERO SECTION */
@@ -97,9 +102,7 @@ body {
 }
 
 /* ABOUT SECTION */
-.about-me {
-    
-}
+
 .btn-about {
     background-color: #E5446D;
     border-radius: 5px;
@@ -141,6 +144,7 @@ body {
 }
 .bi {
     font-size: 30px;
+    color: #E5446D;
 }
 .contact-media p {
     font-weight: bold;
@@ -151,6 +155,9 @@ body {
     margin: 50px 0 20px;
     letter-spacing: 3px;
     font-size: 12px;
+}
+.row {
+    margin: 0;
 }
 
 /* MEDIA QUERIES */
